@@ -22,6 +22,7 @@ int main () {
     cout << "Enter 1 for a 1-player game or 2 for a 2-player game: ";
     int choice;
     cin >> choice;
+    cout << endl;
     while (!cin.good() || (choice != 1 && choice != 2)) {
         cout << "Bad entry. Please input either 1 or 2 for one or two player game: ";
         cin.clear();
@@ -36,9 +37,8 @@ int main () {
         cout << "Player 2, enter your name: ";
         string player2Name;
         cin >> player2Name;
+        Board test(player1Name, player2Name);
     }
-    
-    
     
     
     
